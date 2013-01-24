@@ -1,0 +1,9 @@
+Civic Science:
+<script type="text/javascript" src="https://www.civicscience.com/widget/jspoll/?elt=adedb0e9-31a9-5734-957d-d56818426ebc&amp;tgtid=67426d24-bb3b-0a24-1d76-fcb2e1f61bbd"></script><div id="adedb0e9-31a9-5734-957d-d56818426ebc"></div> 
+
+Youtube:
+http://www.youtube.com/watch?v=GLmXq5k3-EQ&feature=related
+
+Scribd:
+document_id: 110306144
+access_key: key-27vtvv9lb3lqyc0xg7nk

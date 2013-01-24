@@ -1,0 +1,40 @@
+<html>
+  <head>
+
+    <script src="http://code.jquery.com/jquery-latest.min.js" type="text/javascript"></script>
+    <script type="text/javascript">
+
+      (function($){
+        $.fn.extend({
+          myPlugIn : function(options) {
+            // DEFINE DEFAULT VARIABLES IN CASE NONE ARE PASSED IN
+            var defaults = { text:'Default Text' };
+            var options  = $.extend(defaults, options);
+
+            // APPLY THIS PLUGIN TO THE SELECTED OBJECT
+            // BY SIMPLY USING THE $(THIS) SELECTOR
+            return(this.each(
+              function(){ $(this).append(options.text); }
+            ));
+          }
+        });
+      })(jQuery);
+
+    </script>
+  </head>
+
+  <body>
+    <div id="test1" style="background-color:#aaaaaa;">Test 1: </div>
+    <div id="test2" style="background-color:#aaaaff;">Test 2: </div>
+
+    <p><a href="#" onClick="$('#test1').myPlugIn()">
+      Insert default text into Test 1
+    </a></p>
+
+    <p><a href="#" onClick="$('#test2').myPlugIn({text:'Custom Text'})">
+      Insert custom text into Test 2
+    </a></p>
+
+  </body>
+</html>
+

@@ -1,0 +1,4 @@
+/* BENNINGTON BANNER JOL */
+#gregbox-outer { background: #7da7bb !important; }
+div.shadowText, div.shadowTextAlt { background: url("http://i-ppjol.s3.amazonaws.com/signin/pp_sign-in_button-7da7bb.png") no-repeat scroll 0 0 transparent !important; }
+* html #gregbox-content { border: 6px solid #7da7bb !important; }

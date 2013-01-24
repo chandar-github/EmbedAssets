@@ -1,0 +1,22 @@
+#newstogram-recommender-v2                                                                                                       { width:398px; padding:2px; font-family:Arial,verdana,Helvetica,sans-serif; padding-bottom:1px; height:250px; margin-top:40px; }
+#newstogram-recommender-v2 .newstogram-title                                                                                     { margin-top:-20px; }
+#newstogram-recommender-v2 .newstogram-title .headline                                                                           { font-family:"Trebuchet MS","Helvetica Neue",Helvetica,Arial,sans-serif; font-size:14pt; font-weight:bold; color:#3A557B; text-transform:uppercase; margin-top:0px; padding-left:10px; padding-top:0px; }
+
+#newstogram-recommender-v2 .newstogram-my-headlines                                                                              { margin-bottom:6px; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-inner                                               { margin-bottom:5px; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-inner .headlines-list                               { margin:0px; padding:0px; margin-top:10px; margin-left:10px; list-style-position:outside; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-inner .headlines-list .headline-link                { font-family:"PT Serif","Georgia","Times New Roman",Times,serif; font-size:12pt; color:#3A557B; list-style-position:outside; list-style-type:none; margin-bottom:5px; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-inner .headlines-list .headline-link a              { font-family:"PT Serif","Georgia","Times New Roman",Times,serif; font-size:10pt; font-weight:bold; color:#444444; text-decoration:none; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-inner .headlines-list .headline-link a:hover        { text-decoration:underline; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-inner .headlines-list .headline-link:before         { content: "\00BB\00a0"; }
+
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-sponsored-link                                      { width:100%; padding-left:10px; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-sponsored-link .sponsored-link-title                { text-align:left; font-size:7pt; color:#cad0d0; color:#808080; width:100%; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-sponsored-link .sponsored-link-detail               { }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-sponsored-link .sponsored-link-detail .link         { display:block; width:100%; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-sponsored-link .sponsored-link-detail .link a       { color:#003366; text-decoration:none; font-size:9pt; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-sponsored-link .sponsored-link-detail .link a:hover { text-decoration:underline; }
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-sponsored-link .sponsored-link-detail .source       { color:#808080; font-size:7.5pt; }
+
+#newstogram-recommender-v2 .newstogram-my-headlines .newstogram-my-headlines-sponsored-link .logo                                { float:right; }
+#newstogram-recommender-v2 .newstogram-bottom-add iframe                                                                         { margin:0; padding:0; border:none; width:auto; height:250px; overflow:hidden; }

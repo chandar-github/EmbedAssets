@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>   <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>   <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript" src="common/jquery/jquery-min.js"></script>
+    <script type="text/javascript" src="common/jquery/jquery-extensions.js"></script>
+    <script type="text/javascript" src="common/jquery/jquery-cookie-min.js"></script>
+    <script type="text/javascript" src="common/jquery/jquery-hoverintent-min.js"></script>
+    <script type="text/javascript" src="common/dfm/dfm-core-javascript-extensions.js"></script>
+    <script type="text/javascript" src="common/dfm/dfm-core.js"></script>
+    <script type="text/javascript" src="common/dfm/modernizr-2.5.3-custom-min.js"></script><!--[if (gte IE 6)&(lte IE 8)]>
+    <script type="text/javascript" src="common/dfm/selectivizr-min.js"></script><![endif]-->
+    <script type="text/javascript" src="common/dfm/dfm-core-embed.js"></script>
+    <link   type="text/css"       href="http://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet" />
+    <link   type="text/css"       href="common/dfm/dfm-core.css"         rel="stylesheet" />
+    <link   type="text/css"       href="common/dfm/dfm-core-article.css" rel="stylesheet" />
+    <link   type="text/css"       href="assets/local.css"                rel="stylesheet" />
+  </head>
+  <body>
+
+
+    <div class="device">
+      <script type="text/javascript">dfm.$(".device").addClass(dfm.env.device);</script>
+    </div><!--/device-->
+
+
+
+    <div class="buffer">
+      <script type="text/javascript">
+         var obj = dfm.new({
+           "type":"youtube",
+           "size":"large",
+           "src":"http://www.youtube.com/watch?v=XteCjXG3VWA&feature=g-vrec",
+           "parent":".device"
+         }, true);
+        </script>
+    </div><!--/buffer-->
+
+
+  </body>
+</html>
