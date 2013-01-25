@@ -77,6 +77,13 @@
     <script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-storify.js"></script>
     <script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-timeline.js"></script>
     <script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-manyeyes.js"></script>
+    <script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-coveritlive.js"></script>
+	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-scribblelive.js"></script>
+	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-dipity.js"></script>
+	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-vimeo.js"></script>
+	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-livestream.js"></script>
+	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-ustream.js"></script>
+	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-seeclickfix.js"></script>
 
     <link   type="text/css"       href="http://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet" />
     <link   type="text/css"       href="common/dfm/dfm-core.css"         rel="stylesheet" />
@@ -304,7 +311,7 @@
                       <p>The dispatcher says he's safe but was still being brought out of the dense forest.</p>
                       <p>Authorities say Pember was hiking with his father Monday afternoon when the two men got separated. Police launched air and ground searches but didn't find any sign of Pember until he made a cell phone call late Tuesday night. It still took rescuers several hours to find him in the treacherous terrain.
                       <script type="text/javascript">
-                      var obj = dfm.new1({
+                      var obj = dfm.newdfmobject({
 							"type":"spundge",
 							"parent":".page-body .story p:nth-child(5)",
 							"itemID":"336",
@@ -316,7 +323,7 @@
                       <p>
                       <b>social media aggregation and story telling platform</b>
 	                      <script type="text/javascript">
-	                      var obj = dfm.new1({
+	                      var obj = dfm.newdfmobject({
 								"type":"storify",
 								"parent":".page-body .story p:nth-child(6)",
 								accountID	: 'DigitalFirst',
@@ -328,7 +335,7 @@
                       <p>
                       <b>interactive timeline platform</b>
 	                      	<script type="text/javascript">
-		                      var obj = dfm.new1({
+		                      var obj = dfm.newdfmobject({
 									"type":"timeline",
 									"parent":".page-body .story p:nth-child(7)",
 									width : 650,
@@ -340,7 +347,7 @@
                       <p>
                       <b>data visualization platform</b>
 	                      	<script type="text/javascript">
-		                      var obj = dfm.new1({
+		                      var obj = dfm.newdfmobject({
 									"type":"manyeyes",
 									"parent":".page-body .story p:nth-child(8)",
 		                  			scriptSrc	: "http://www-958.ibm.com/me/visualizations/f97c588ef6fa11e18a2e000255111976/comments/f98ecda2f6fa11e18a2e000255111976.js?width=350&height=350"
@@ -527,7 +534,7 @@
 
 
 /*
-         var obj = dfm.new1({
+         var obj = dfm.newdfmobject({
            "type":"youtube",
            "size":"large",
            "src":"http://www.youtube.com/watch?v=XteCjXG3VWA&feature=g-vrec",
@@ -535,7 +542,7 @@
          }, true);
 */
 
-			/*var obj = dfm.new1({
+			/*var obj = dfm.newdfmobject({
 				"type":"scribd",
 				"size":"large",
 				"parent":"#scribeD1",
@@ -545,14 +552,14 @@
          }, true);
 */
 /*
-			var obj = dfm.new1({
+			var obj = dfm.newdfmobject({
 				"type":"brightcove",
 				"parent":".page-body .story p:nth-child(1)",
 				"eCode": '' // the code messes up the page even when its commented out, need to get it from brightcove.js if you need to test this
          }, true);
 */
 
-			var obj = dfm.new1({
+			var obj = dfm.newdfmobject({
 				"type":"googledoc",
 				"parent":".page-body .story p:nth-child(3)",
 				"size":"large",
@@ -560,7 +567,7 @@
          }, true);
 
 
-		var obj = dfm.new1({
+		var obj = dfm.newdfmobject({
 				"type":"googlemap",
 				"parent":".page-body .story p:nth-child(4)",
 				"size":"large",
@@ -569,7 +576,7 @@
          
 
 /*
-			var obj = dfm.new1({
+			var obj = dfm.newdfmobject({
 				"type":"gallerriffic",
 				"parent":".page-body .story p:nth-child(5)",
 				"thumbs":"5",
@@ -582,6 +589,58 @@
 				"maxWidth":"580",
          }, true);
 */
+
+		var obj = dfm.newdfmobject({
+                                "type":"coveritlive",
+                                "size":"medium",
+                                "parent":".coveritlive",
+                                "itemId":'19c9e32294'
+         }, true);
+         
+         var obj = dfm.newdfmobject({
+                                "type":"scribblelive",
+                                "size":"large",
+                                "parent":".coveritlive",
+                                "itemId":'67052',
+                                "themeId":'7620'
+         }, true);
+         var obj = dfm.newdfmobject({
+                                "type":"dipity",
+                                "size":"medium",
+                                "parent":".coveritlive"
+         }, true);
+         var obj = dfm.newdfmobject({
+                                "type":"vimeo",
+                                "size":"large",
+                                "parent":".coveritlive",
+                                "videoId":"47104272"
+         }, true);
+         var obj = dfm.newdfmobject({
+                                "type":"livestream",
+                                "size":"small",
+                                "parent":".coveritlive",
+                                "accountId":"142499",
+                                "eventId":"849381",
+                                "videoId":"1223545"
+         }, true);
+         var obj = dfm.newdfmobject({
+                                "type":"ustream",
+                                "size":"medium",
+                                "parent":".coveritlive",
+                                "videoId":"11854277"
+         }, true);
+          var obj = dfm.newdfmobject({
+                                "type":"seeclickfix",
+                                "size":"small",
+                                "parent":".coveritlive",
+                                lat  : '40.44923007301234',
+                            lng : '-75.93085718750001',
+                            num_results : '100',
+                            search : 'Sandy',
+                            statusOpen : 'true',
+                            token : '95b0e7923af305479fb7b0866648f4e5a3a155c0',
+                            zoom : '8'
+         }, true);
 		</script>
     </div><!--/buffer-->
 
