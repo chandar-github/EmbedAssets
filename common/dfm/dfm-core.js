@@ -77,7 +77,7 @@ var dfm = {
   // Overview: Create a new instance of a dfm.data object
   // Examples: var myObject = dfm.new({ "type":"youtube" [, optionalKey:optionalValue ...] });
   //
-  new1 : function (){
+  newdfmobject : function (){
     var obj = new Object();
     if(arguments.length && dfm.type(arguments[0])=="object" && dfm.type(arguments[0].type)!="undefined"){
       obj=new dfm.data(arguments[0].type);

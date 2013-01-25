@@ -13,7 +13,7 @@ dfm.api("data", "scribd", {
     src     : '',
 
     docID   : '',
-    aKey    : '',
+    akey    : '',
     dType   : "write"
   },
 
@@ -27,7 +27,7 @@ dfm.api("data", "scribd", {
 				dfm.api("load","script","http://www.scribd.com/javascripts/scribd_api.js",false);
 
         if(typeof(obj.size!="undefined")) jQuery.extend(obj,this.root.defaults.getObject(obj.size));
-        if(typeof(obj.src!="undefined"))  obj.src="http://www.youtube-nocookie.com/embed/"+((new String(obj.src)).qsa2ary()).getValue("v")+"?rel=0";
+        if(typeof(obj.src!="undefined"))  obj.src="http://www.youtube-nocookie.com/embed/"+(obj.src.qsa2ary()).getValue("v")+"?rel=0";
         jQuery.extend(this.root.model,obj);
       };
     },
@@ -37,16 +37,14 @@ dfm.api("data", "scribd", {
 	    doc.addParam('jsapi_version', 2);
 	    doc.addParam('height', embed_height);
 	    doc.addParam('width', embed_width);
-	    alert(parent);
 	    dType=='write' ? doc.write(parent) : doc.seamless(parent);
-	    doc.addParam('dType', dType);
     },
 
     make : function (){
       var m=this.root.model;
       var h='<div id="scribeD1"></div>';
       jQuery(m.parent).append(h);
-			setTimeout(this.root.control.done(this.root.model.docID, this.root.model.aKey, this.root.model.dType, this.root.model.height, this.root.model.width, 'scribeD1'), 300);
+			setTimeout(this.control.done("+this.root.model.docID+", '"+this.root.model.aKey+"', '"+this.root.model.dType+"', '"+this.root.model.height+"', '"+this.root.model.width+"', '"+this.root.model.parent+"'), 300);
       m.root.view=jQuery("#"+m.id)[0];
     }
   },

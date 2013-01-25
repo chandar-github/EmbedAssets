@@ -13,7 +13,7 @@ dfm.api("data", "gallerriffic", {
 	adURL      : 'http://photos.mercurynews.com/wp-content/themes/gridline_10_12_2010/ads/photo350x200.html?thepagetag=photo_galleries&thepagecat=',
 	AdCategory : 'soundslides_sports',
 	maxHeight  : '350',
-	maxWidth   : '580'
+	maxWidth   : '580',
   },
 
   // PLACEHOLDER THAT WILL EVENTUALLY REFERENCING THE NEWLY CREATED DOM ELEMENT
@@ -72,6 +72,6 @@ dfm.api("data", "gallerriffic", {
   },
 
   // DEFAULT PARAMETERS:
-  defaults: null
+  defaults: null,
 });
 
