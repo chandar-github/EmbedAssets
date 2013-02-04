@@ -44,7 +44,7 @@ dfm.api("data", "scribd", {
       var m=this.root.model;
       var h='<div id="scribeD1"></div>';
       jQuery(m.parent).append(h);
-			setTimeout(this.control.done("+this.root.model.docID+", '"+this.root.model.aKey+"', '"+this.root.model.dType+"', '"+this.root.model.height+"', '"+this.root.model.width+"', '"+this.root.model.parent+"'), 300);
+	  setTimeout(this.control.done("+this.root.model.docID+", '"+this.root.model.aKey+"', '"+this.root.model.dType+"', '"+this.root.model.height+"', '"+this.root.model.width+"', '"+this.root.model.parent+"'), 300);
       m.root.view=jQuery("#"+m.id)[0];
     }
   },

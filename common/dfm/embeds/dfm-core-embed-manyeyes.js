@@ -27,7 +27,6 @@ dfm.api("data", "manyeyes", {
 
     make : function (){
       var m=this.root.model;
-      var dimemsion = (m.size == 'small')?"width="+m.width+"&height="+m.height:'';
       document.write('<script type="text/javascript" src="'+m.scriptSrc+'"></script>');
     }
   },
