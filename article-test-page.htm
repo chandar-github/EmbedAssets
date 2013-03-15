@@ -84,6 +84,7 @@
 	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-livestream.js"></script>
 	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-ustream.js"></script>
 	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-seeclickfix.js"></script>
+	<script type="text/javascript" src="common/dfm/embeds/dfm-core-embed-documentcloud.js"></script>
 
     <link   type="text/css"       href="http://fonts.googleapis.com/css?family=Merriweather:700" rel="stylesheet" />
     <link   type="text/css"       href="common/dfm/dfm-core.css"         rel="stylesheet" />
@@ -360,6 +361,7 @@
                       <p><b>Livestream Asset Type</b></p>
                       <p><b>Ustream Asset Type</b></p>
                       <p><b>See Click Fix Asset Type</b></p>
+                      <p><b>Document Cloud</b><div id="doc"> </div></p>
                       <br style="clear:both;"/>
                       <br clear="all" />
                     </div><!--/story-->
@@ -576,32 +578,32 @@
 		var obj = dfm.newdfmobject({
                                 "type":"coveritlive",
                                 "size":"large",
-                                "parent":".page-body .story p:nth-child(11)",
+                                "parent":".page-body .story p:nth-child(9)",
                                 "itemId":'19c9e32294'
          }, true);
          
          var obj = dfm.newdfmobject({
                                 "type":"scribblelive",
                                 "size":"large",
-                                "parent":".page-body .story p:nth-child(12)",
+                                "parent":".page-body .story p:nth-child(10)",
                                 "itemId":'67052',
                                 "themeId":'7620'
          }, true);
          var obj = dfm.newdfmobject({
                                 "type":"dipity",
                                 "size":"large",
-                                "parent":".page-body .story p:nth-child(13)"
+                                "parent":".page-body .story p:nth-child(11)"
          }, true);
          var obj = dfm.newdfmobject({
                                 "type":"vimeo",
                                 "size":"large",
-                                "parent":".page-body .story p:nth-child(14)",
+                                "parent":".page-body .story p:nth-child(12)",
                                 "videoId":"47104272"
          }, true);
          var obj = dfm.newdfmobject({
                                 "type":"livestream",
                                 "size":"large",
-                                "parent":".page-body .story p:nth-child(15)",
+                                "parent":".page-body .story p:nth-child(13)",
                                 "accountId":"142499",
                                 "eventId":"849381",
                                 "videoId":"1223545"
@@ -609,13 +611,13 @@
          var obj = dfm.newdfmobject({
                                 "type":"ustream",
                                 "size":"large",
-                                "parent":".page-body .story p:nth-child(16)",
+                                "parent":".page-body .story p:nth-child(14)",
                                 "videoId":"11854277"
          }, true);
           var obj = dfm.newdfmobject({
                                 "type":"seeclickfix",
                                 "size":"large",
-                                "parent":".page-body .story p:nth-child(17)",
+                                "parent":".page-body .story p:nth-child(15)",
                                 lat  : '40.44923007301234',
                             lng : '-75.93085718750001',
                             num_results : '100',
@@ -623,6 +625,12 @@
                             statusOpen : 'true',
                             token : '95b0e7923af305479fb7b0866648f4e5a3a155c0',
                             zoom : '8'
+         }, true);
+         var obj = dfm.newdfmobject({
+							"type":"documentcloud",
+							"size":"large",
+							"parent":"div#doc",
+							"docCloudUrl" : 'http://www.documentcloud.org/documents/5205-concerning-the-interview.js'
          }, true);
 		</script>
     </div><!--/buffer-->
